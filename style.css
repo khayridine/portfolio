@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Corrected value */
     font-family: sans-serif;
 }
 
@@ -9,9 +9,11 @@
     height: 100vh; 
     width: 100%; 
     position: relative;
-    background: url(background.png);
+    background: url(background.png); /* Changed background image */
     display: flex;
     flex-direction: column;
+    background-size: cover; /* Ensures the background covers the entire container */
+    background-position: center; /* Centers the background */
 }
 
 header {
@@ -70,13 +72,39 @@ header nav ul li a {
     background-color: #007bff;
     color: #fff; 
 }
-.section-2{
-    width: 40%;
-    margin-right: 40px;
-}
-.section-2 img{
-    width: 70%;
+
+.section-2 {
+    width: 35%; /* Augmenter légèrement la largeur pour déplacer l'image vers la droite */
+    margin-left: auto; /* Garder l'image légèrement à droite */
 }
 
+.section-2 img {
+    width: 60%; /* Augmenter légèrement la largeur de l'image */
+    border-radius: 20px;
+    margin-left: 10%; /* Déplacer l'image encore un peu plus vers la droite */
+}
 
 
+.section-3 {
+    text-align: center;
+    margin: 5px;
+    font-size: 17px; /* Augmenter légèrement la taille de la police */
+    list-style: none;
+    padding: 0;
+    margin-top: 10px; /* Déplacer la section vers le haut */
+    display: flex;
+    justify-content: flex-start; /* Déplacer vers la gauche */
+    align-items: center; /* Centrer verticalement */
+}
+
+.section-3 img {
+    width: 40px; /* Augmenter légèrement la taille des icônes */
+    margin: 3px  10px; /* Ajouter un espace entre les icônes */
+}
+
+
+
+.footer-links {
+   
+    
+}
